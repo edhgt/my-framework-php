@@ -1,0 +1,19 @@
+{
+    "name": "edhernandez/my-framework-php",
+    "description": "Proyecto básico",
+    "authors": [
+        {
+            "name": "Danilo Hernandez",
+            "email": "dhernandez0032@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
