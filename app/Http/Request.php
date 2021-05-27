@@ -31,4 +31,29 @@ class Request
 			? 'index'
 			: $this->segments[2];
 	}
+
+	public function getController()
+	{
+		$controller = ucfirst($this->controller);
+
+		return "App\Http\Controller\\{$controller}Controller";
+	}
+
+	public function getMethod()
+	{
+		return $this->method;
+	}
+
+	public function send()
+	{
+		$controller = $this->getController();
+		$method = $this->getMethod();
+
+		$response = call_user_func([
+			new $controller,
+			$method
+		]);
+
+		$response->send();
+	}
 }
