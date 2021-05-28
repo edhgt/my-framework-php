@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Response;
-
 /**
  * HomeController
  */
@@ -12,6 +10,6 @@ class ContactController
 	
 	public function index()
 	{
-		return new Response('contact');
+		return view('contact');
 	}
 }
