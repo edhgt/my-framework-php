@@ -7,11 +7,11 @@ use App\Http\Response;
 /**
  * HomeController
  */
-class HomeController
+class ContactController
 {
 	
 	public function index()
 	{
-		return new Response('home');
+		return new Response('contact');
 	}
 }

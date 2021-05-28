@@ -36,7 +36,7 @@ class Request
 	{
 		$controller = ucfirst($this->controller);
 
-		return "App\Http\Controller\\{$controller}Controller";
+		return "App\Http\Controllers\\{$controller}Controller";
 	}
 
 	public function getMethod()
